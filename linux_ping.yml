@@ -1,0 +1,8 @@
+---
+- name: linux_ping demo
+  hosts: all
+  become: false
+  gather_facts: false
+  tasks:
+    - name: test connection
+      ansible.builtin.ping:
